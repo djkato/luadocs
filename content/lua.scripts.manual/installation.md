@@ -61,8 +61,12 @@ The recommended way to enable and disable specific scripts is using the script m
     echo 'require "tools/script_manager"' > ~/.config/darktable/luarc
 
 ### Windows
+inside command prompt:
 
-    echo "require 'tools/script_manager'" > %LOCALAPPDATA%\darktable\luarc
+    echo require 'tools/script_manager' > %LOCALAPPDATA%\darktable\luarc
+inside PowerShell:
+    
+    echo "require 'tools/script_manager'" > $env:LOCALAPPDATA\darktable\luarc
 
 ### Snap
 
